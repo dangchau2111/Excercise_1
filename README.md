@@ -38,26 +38,26 @@ where:
 - \( \nabla_\theta \text{Loss} \) is the gradient of the loss function with respect to \( \theta \).
 
 **Flow of Computation**:
-1. Compute logits: \( z = X \cdot \theta \)
-2. Apply Softmax to obtain class probabilities: \( p = \text{softmax}(z) \)
-3. Compute Cross-Entropy Loss: \( \text{Loss} = -\frac{1}{m} \sum_{i=1}^{m} \sum_{k=1}^{K} y_{i,k} \log(p_{i,k}) \)
-4. Update parameters using Gradient Descent: \( \theta := \theta - \alpha \cdot \nabla_\theta \text{Loss} \)
+1. Compute logits: $$\( z = X \cdot \theta \)$$
+2. Apply Softmax to obtain class probabilities: $$\( p = \text{softmax}(z) \)$$
+3. Compute Cross-Entropy Loss: $$\( \text{Loss} = -\frac{1}{m} \sum_{i=1}^{m} \sum_{k=1}^{K} y_{i,k} \log(p_{i,k}) \)$$
+4. Update parameters using Gradient Descent: $$\( \theta := \theta - \alpha \cdot \nabla_\theta \text{Loss} \)$$
 
 ## Execution
 
 ### Training Results
 
 The model was trained for 1000 iterations with the following loss values recorded at various checkpoints:
-Iteration 0: Loss = 1.5888747638492926
-Iteration 100: Loss = 0.34419817129761715
-Iteration 200: Loss = 0.3092600330260409
-Iteration 300: Loss = 0.2938721864571801
-Iteration 400: Loss = 0.284682588933372
-Iteration 500: Loss = 0.27837018341530406
-Iteration 600: Loss = 0.27366197008872023
-Iteration 700: Loss = 0.26995334508320085
-Iteration 800: Loss = 0.26691662627460555
-Iteration 900: Loss = 0.26435794986878547
+- Iteration 0: Loss = 1.5888747638492926
+- Iteration 100: Loss = 0.34419817129761715
+- Iteration 200: Loss = 0.3092600330260409
+- Iteration 300: Loss = 0.2938721864571801
+- Iteration 400: Loss = 0.284682588933372
+- Iteration 500: Loss = 0.27837018341530406
+- Iteration 600: Loss = 0.27366197008872023
+- Iteration 700: Loss = 0.26995334508320085
+- Iteration 800: Loss = 0.26691662627460555
+- Iteration 900: Loss = 0.26435794986878547
 
 Accuracy: 91.89%
 
