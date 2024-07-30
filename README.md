@@ -23,10 +23,10 @@ The Categorical Cross-Entropy Loss quantifies the difference between predicted p
 $$ \text{Loss} = -\frac{1}{m} \sum_{i=1}^{m} \sum_{k=1}^{K} y_{i,k} \log(p_{i,k}) $$
 
 where:
-- \( m \) is the number of samples,
-- \( K \) is the number of classes,
-- \( y_{i,k} \) is a binary indicator (0 or 1) if class label \( k \) is the correct classification for sample \( i \),
-- \( p_{i,k} \) is the predicted probability of class \( k \) for sample \( i \).
+- $\( m \)$ is the number of samples,
+- $\( K \)$ is the number of classes,
+- $\( y_{i,k} \)$ is a binary indicator (0 or 1) if class label $\( k \)$ is the correct classification for sample $\( i \)$,
+- $\( p_{i,k} \)$ is the predicted probability of class $\( k \)$ for sample $\( i \)$.
 
 **Gradient Descent**:
 Gradient Descent is used to minimize the loss function by iteratively updating model parameters. The update rule is:
@@ -34,8 +34,8 @@ Gradient Descent is used to minimize the loss function by iteratively updating m
 $$ \theta := \theta - \alpha \cdot \nabla_\theta \text{Loss} $$
 
 where:
-- \( \alpha \) is the learning rate,
-- \( \nabla_\theta \text{Loss} \) is the gradient of the loss function with respect to \( \theta \).
+- $\( \alpha \)$ is the learning rate,
+- $\( \nabla_\theta \text{Loss} \)$ is the gradient of the loss function with respect to $\( \theta \)$.
 
 **Flow of Computation**:
 1. Compute logits: $\( z = X \cdot \theta \)$
