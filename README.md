@@ -65,6 +65,6 @@ Accuracy: 91.89%
 ## References
 
 - [MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
-- [Softmax Regression Explained](https://towardsdatascience.com/softmax-regression-a-guide-for-machine-learning-4bdb4c30ff6c)
+- [Softmax Regression Explained]([https://towardsdatascience.com/softmax-regression-a-guide-for-machine-learning-4bdb4c30ff6c](https://machinelearningcoban.com/2017/02/17/softmax/#-gioi-thieu))
 
 Feel free to explore the code and modify it to suit your needs!
