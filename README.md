@@ -38,14 +38,10 @@ where:
 - \( \nabla_\theta \text{Loss} \) is the gradient of the loss function with respect to \( \theta \).
 
 **Flow of Computation**:
-1. Compute logits:
-$$\( z = X \cdot \theta \)$$
-2. Apply Softmax to obtain class probabilities:
-$$\( p = \text{softmax}(z) \)$$
-4. Compute Cross-Entropy Loss:
-$$\( \text{Loss} = -\frac{1}{m} \sum_{i=1}^{m} \sum_{k=1}^{K} y_{i,k} \log(p_{i,k}) \)$$
-6. Update parameters using Gradient Descent:
-$$\( \theta := \theta - \alpha \cdot \nabla_\theta \text{Loss} \)$$
+1. Compute logits:$\( z = X \cdot \theta \)$
+2. Apply Softmax to obtain class probabilities:$\( p = \text{softmax}(z) \)$
+3. Compute Cross-Entropy Loss:$\( \text{Loss} = -\frac{1}{m} \sum_{i=1}^{m} \sum_{k=1}^{K} y_{i,k} \log(p_{i,k}) \)$
+4. Update parameters using Gradient Descent:$\( \theta := \theta - \alpha \cdot \nabla_\theta \text{Loss} \)$
 
 ## Execution
 
